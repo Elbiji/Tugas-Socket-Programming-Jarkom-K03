@@ -1,2 +1,3 @@
 # Tugas-Socket-Programming-Jarkom-K03
-Repository tugas jarkom K03 Bagas Rakha
+Bagas Noor Fadhilah 18223115
+Rakha
