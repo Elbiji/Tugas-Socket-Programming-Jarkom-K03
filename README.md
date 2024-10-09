@@ -1,3 +1,3 @@
-# Tugas-Socket-Programming-Jarkom-K03
+# Tugas-Socket-Programming-Jarkom-K03-Kelompok 5
 Bagas Noor Fadhilah 18223115
-Rakha
+M Rabbani K A 18223130
