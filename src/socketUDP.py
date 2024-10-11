@@ -5,7 +5,7 @@ import threading
 import queue
 
 serverPort = 50000
-serverIP ="192.168.6.57"
+serverIP ="***"
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 serverSocket.bind((serverIP, serverPort))
 print("Server bilangan acak")
