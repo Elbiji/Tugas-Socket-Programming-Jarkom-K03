@@ -3,7 +3,7 @@ import random
 import string
 import time
 
-serverName = "192.168.6.57"
+serverName = ""
 serverPort = 50000
 clientSocket = socket(AF_INET,SOCK_DGRAM)
 message = input("Masukan nama anda:")
