@@ -6,6 +6,8 @@ serverName = ""
 serverPort = 50000
 clientSocket = socket(AF_INET,SOCK_DGRAM)
 
+def ciphering(message):
+    
 def receive_message():
     while True:
         try:
@@ -32,8 +34,7 @@ threading.Thread(target=receive_message, daemon=True).start()
 
 while True:
     message = input("")
+        
     clientSocket.sendto(message.encode(),(serverName,serverPort))
-    pesan, serverAddress = clientSocket.recvfrom(2048)
-    message ="Permintaan acak"
-    clientSocket.sendto(message.encode(),(serverName,serverPort))
-    print("Bilangan Acak dari server("+str(serverAddress)+"): "+str(pesan.decode()))
+
+
