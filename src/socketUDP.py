@@ -63,6 +63,7 @@ def handle():
                                 break
                             else:
                                 serverSocket.sendto("Username sudah dipakai".encode(), clientAddress)
+                                handle()
                     else:
                         serverSocket.sendto("Wrong Passkey".encode(), clientAddress)
                         print(f"Client {clientAddress} gives wrong passkey access denied")

@@ -52,6 +52,7 @@ def username():
             break
         else:
             print(receive_message.decode())
+            username = input("Masukkan Passkey: ")
 
 def handle():
     print("\n"*3)
