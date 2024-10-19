@@ -1,11 +1,12 @@
 from socket import *
 
-serverPort = 5000
+serverPort = 50000
 serverIP ="192.168.1.7"
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 serverSocket.bind((serverIP, serverPort))
 
 Clients = {}
+
 Passkey = "123"
 
 print("Server is running . . . .")
@@ -13,7 +14,7 @@ print("Server is running . . . .")
 while True:
     try:
         message, clientAddress = serverSocket.recvfrom(2048)
-        decoded_message = message.decode()
+        decoded_message = message.decode()  
 
         if clientAddress not in Clients:
             if (decoded_message == Passkey):
@@ -30,6 +31,7 @@ while True:
             print(f"Message from {Clients[clientAddress]}: {decoded_message}")
             for user in Clients:
                 if user != clientAddress:
+                    print("message sent by",username)
                     serverSocket.sendto(f"{username}: {decoded_message}".encode(), user)
 
     except ConnectionError as e:
