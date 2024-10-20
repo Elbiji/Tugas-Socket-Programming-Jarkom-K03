@@ -49,10 +49,11 @@ def username():
         clientSocket.sendto(username.encode(), (serverName,serverPort))
         receive_message, _ = clientSocket.recvfrom(2048)
         if receive_message.decode() == "Berhasil":
+            print("Username accepted, joining the chatroom...")
             break
         else:
             print(receive_message.decode())
-            username = input("Masukkan Passkey: ")
+    
 
 def handle():
     print("\n"*3)
