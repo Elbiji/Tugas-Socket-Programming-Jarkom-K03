@@ -19,7 +19,7 @@ passkey_queue = queue.Queue()
 def receive():
     while True:
         try:
-            time.sleep(1)
+            time.sleep(1) # Delay to avoid racing conditions
             message, clientAddress = serverSocket.recvfrom(2048)
             decoded_message = message.decode()
             if clientAddress not in passkey_status or not passkey_status[clientAddress]:
