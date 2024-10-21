@@ -100,7 +100,7 @@ threading.Thread(target=receive_message, daemon=True).start()
 
 while True:
     message = input("")
-    encMessage = encrypt(message)
+    encMessage = encrypt(message,5,True)
     clientSocket.sendto(encMessage.encode(),(serverName,serverPort))
 
 
