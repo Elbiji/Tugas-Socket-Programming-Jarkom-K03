@@ -42,6 +42,7 @@ def validation():
         except Exception as e:
             print(f"An error occurred: {e}")  
 
+
 def receive_message():
     while True:
         try:

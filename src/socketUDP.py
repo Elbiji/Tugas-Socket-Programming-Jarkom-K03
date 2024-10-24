@@ -31,7 +31,7 @@ def receive():
         except Exception as e:
             print(f"Error receiving message: {e}")
 
-def broadcast(message, senderaddress=None):
+def broadcast(message, senderaddress):
     for user in Clients:
         if user != senderaddress:
             try:
