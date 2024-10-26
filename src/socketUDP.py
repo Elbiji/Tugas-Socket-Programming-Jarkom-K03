@@ -5,7 +5,7 @@ import time
 
 
 serverPort = 50000
-serverIP = "192.168.6.57"
+serverIP = "10.97.54.1"
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 serverSocket.bind((serverIP, serverPort))
 
